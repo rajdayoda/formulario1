@@ -12,7 +12,7 @@ $nota2 = $_POST['nota2'];
 
 
 
-$header = 'From: NUEVO CLIENTE N/CODER <email@ncoder.com>' . "\r\n"; // cambiar email@ncoder.com por email@el dominio de tu hosting esto solo sera representativo
+$header = 'From: NUEVO CLIENTE N/CODER <rsh0daya@gmail.com>' . "\r\n"; // cambiar email@ncoder.com por email@el dominio de tu hosting esto solo sera representativo
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
