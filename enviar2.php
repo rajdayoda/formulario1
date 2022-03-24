@@ -12,7 +12,7 @@ $nota2 = $_POST['nota2'];
 
 
 
-$header = 'From: NUEVO CLIENTE N/CODER <rsh0daya@gmail.com>' . "\r\n"; // cambiar email@ncoder.com por email@el dominio de tu hosting esto solo sera representativo
+$header = 'From: NUEVO CLIENTE N/CODER <email@ncoder.com>' . "\r\n"; // cambiar email@ncoder.com por email@el dominio de tu hosting esto solo sera representativo
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
@@ -32,10 +32,10 @@ $message .= "Notas Adicionales: " . $nota2 . " \r\n";
 
 
 
-$para = 'rsh0daya@gmail.com'; // aqui iran los correro a los que el mensaje llegará borra $mail y solo deja entre comillas los correos
+$para = $mail; //'coloca aqui tu correo (con comas si son varios)'; // aqui iran los correro a los que el mensaje llegará borra $mail y solo deja entre comillas los correos
 $asunto = 'Nueva solicitud Cliente para Registro de Garantía';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:index.html");
+header("Location:index.html"); // aqui colocas la pagina a donde se redirige al enviar
 ?>
