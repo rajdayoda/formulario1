@@ -32,7 +32,7 @@ $message .= "Notas Adicionales: " . $nota2 . " \r\n";
 
 
 
-$para = 'coloca aqui tu correo (con comas si son varios)'; // aqui iran los correro a los que el mensaje llegará
+$para = $mail 'coloca aqui tu correo (con comas si son varios)'; // aqui iran los correro a los que el mensaje llegará
 $asunto = 'Nueva solicitud Cliente para Registro de Garantía';
 
 mail($para, $asunto, utf8_decode($message), $header);
