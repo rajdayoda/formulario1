@@ -37,5 +37,5 @@ $asunto = 'Nueva solicitud Cliente para Registro de Garantía';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:index.html"); // aqui colocas la pagina a donde se redirige al enviar
+header("Location:registra-tu-garantia.html"); // aqui colocas la pagina a donde se redirige al enviar
 ?>
