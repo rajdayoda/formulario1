@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+
+<body>
+    <section class="hero">
+            <div class="container container-form">
+                <h1>REGISTRA TU GARANTÍA</h1>
+                <form action="./enviar.php" method="post">
+                    <label >Nombre Completo<input type="text" name="name" class="name" placeholder="Nombre Completo" required></label>
+                    <label >Teléfono Celular <input type="phone" name="phone" class="cel" placeholder="Telefono Celular" required></label>
+                    <label >Correo Electrónico<input type="email" name="mail" class="mail" placeholder="Correo Electrónico"></label>
+                    <label >Dirección Completa<input type="text" name="address" class="direccion" placeholder="Dirección completa" required></label> 
+                    <div class="modelos">
+                        <label >¿Cuántos equipos de aire Compró? 
+                        <select name="numeroequipos" class="equipos">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>MAS DE 10</option>
+                        </select>
+                        </label>
+                    </div>
+                    <label >¿En que sucursal Realizó la Compra? 
+                        <select name="sucursal" class="sucursal" required>
+                            <option>Sucursal Multiplaza</option>
+                            <option>Sucursal Albrook Mall</option>
+                            <option>Sucursal Paitilla</option>
+                            <option>Sucursal Los Angeles</option>
+                            <option>Otra sucursal </option>
+                        </select>
+                    </label>
+                        <label> Coloca los modelos del equipos
+                             <textarea name="nota1" placeholder="ejemplo: Q12,000, Q18,000..." required ></textarea>
+                        </label>
+                        <label> Comentarios adicionales
+                            <textarea name="nota2" placeholder="Coloca aqui un comentario adicional sobre el cliente" ></textarea>
+                       </label>
+
+
+                    <button type="submit" class="btn btn-wp">ENVIAR</button>
+
+                </form>
+                <div class="tec-img">
+                    <img src="/img/tecnico.png" alt="">
+                </div>
+            </div>
+    </section>
+
+       
+    </body>
+    </html>
